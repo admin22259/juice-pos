@@ -12,7 +12,7 @@ function updateCart() {
     cartElement.innerHTML = '';
     cart.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = ${item.product} - ${item.price} جنيه;
+        li.textContent = $;{item.product} - $;{item.price} ryal,
         cartElement.appendChild(li);
     });
     document.getElementById('total').textContent = total;
@@ -23,7 +23,7 @@ function checkout() {
         alert("السلة فارغة!");
         return;
     }
-    alert(تم الدفع! الإجمالي: ${total} جنيه);
+    alert (done =total ,{total}, RYAL);
     cart = [];
     total = 0;
     updateCart();
